@@ -1,617 +1,155 @@
 <!DOCTYPE html>
-
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Oaty Date Power Bowl | Natural Energy</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Oaty Date Power Bowl | Natural Energy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script>
         tailwind.config = {
-            darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        "on-surface": "#1d1b16",
-                        "surface-container-highest": "#e7e2d9",
-                        "primary-container": "#994237",
-                        "on-primary-fixed-variant": "#7c2c23",
-                        "secondary": "#6b5c4c",
-                        "on-background": "#1d1b16",
-                        "on-tertiary-fixed-variant": "#005228",
-                        "primary-fixed-dim": "#ffb4a9",
-                        "on-tertiary-fixed": "#00210c",
-                        "surface-tint": "#9b4338",
-                        "surface-dim": "#dfd9d1",
-                        "secondary-fixed": "#f4dfcb",
-                        "on-primary-container": "#ffcbc3",
-                        "secondary-fixed-dim": "#d7c3b0",
-                        "primary-fixed": "#ffdad5",
-                        "on-tertiary": "#ffffff",
-                        "outline-variant": "#d9c2bc",
-                        "on-primary-fixed": "#400101",
-                        "tertiary-fixed": "#6bfe9c",
-                        "surface-bright": "#fff9ef",
-                        "tertiary-container": "#006c36",
-                        "tertiary-fixed-dim": "#4ae183",
-                        "error": "#ba1a1a",
-                        "on-primary": "#ffffff",
-                        "on-secondary-fixed-variant": "#524436",
-                        "outline": "#86736e",
-                        "surface-container-low": "#f9f3ea",
-                        "surface-container-lowest": "#ffffff",
-                        "on-secondary-container": "#716252",
-                        "on-secondary": "#ffffff",
-                        "error-container": "#ffdad6",
-                        "background": "#fff9ef",
-                        "on-tertiary-container": "#5ef292",
-                        "secondary-container": "#f4dfcb",
-                        "inverse-surface": "#32302a",
-                        "inverse-on-surface": "#f6f0e7",
-                        "surface": "#fff9ef",
-                        "surface-variant": "#e7e2d9",
-                        "tertiary": "#005127",
-                        "surface-container-high": "#ede7de",
-                        "inverse-primary": "#ffb4a9",
-                        "on-surface-variant": "#53433f",
                         "primary": "#7b2b23",
+                        "primary-container": "#994237",
+                        "tertiary": "#005127",
+                        "on-surface-variant": "#53433f",
                         "surface-container": "#f3ede4",
-                        "on-error": "#ffffff",
-                        "on-error-container": "#93000a",
-                        "on-secondary-fixed": "#241a0e"
-                    },
-                    fontFamily: {
-                        "headline": ["Epilogue"],
-                        "body": ["Work Sans"],
-                        "label": ["Work Sans"]
-                    },
-                    borderRadius: {"DEFAULT": "0.5rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
-            },
+                    }
+                }
+            }
         }
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        body { font-family: 'Work Sans', sans-serif; background-color: #fff9ef; color: #53433f; }
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+        body { font-family: 'Work Sans', sans-serif; background-color: #fff9ef; color: #1d1b16; margin: 0; padding: 0; overflow-x: hidden; }
         h1, h2, h3, h4 { font-family: 'Epilogue', sans-serif; }
-        .label-style { font-family: 'Epilogue', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; }
     </style>
 </head>
-<body class="bg-surface text-on-surface-variant selection:bg-primary-container selection:text-on-primary-container">
-<!-- Top Navigation -->
-<nav class="bg-[#fff9ef]/80 dark:bg-[#1d1b16]/80 backdrop-blur-xl docked full-width top-0 sticky z-50">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
-<span class="text-2xl font-black text-[#7b2b23] dark:text-[#994237] tracking-tighter">Oaty Date</span>
-<div class="hidden md:flex items-center space-x-8">
-<a class="font-['Epilogue'] font-bold tracking-tight text-[#7b2b23] dark:text-[#994237] border-b-2 border-[#7b2b23] pb-1" href="#">Our Story</a>
-<a class="font-['Epilogue'] font-bold tracking-tight text-[#53433f] dark:text-[#d9c2bc] hover:text-[#7b2b23] transition-colors duration-300" href="#">Nutrition</a>
-<a class="font-['Epilogue'] font-bold tracking-tight text-[#53433f] dark:text-[#d9c2bc] hover:text-[#7b2b23] transition-colors duration-300" href="#">How to Enjoy</a>
-<a class="font-['Epilogue'] font-bold tracking-tight text-[#53433f] dark:text-[#d9c2bc] hover:text-[#7b2b23] transition-colors duration-300" href="#">Shop</a>
-</div>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold tracking-tight active:scale-95 duration-200 uppercase text-sm">
-            BUY NOW
-        </button>
-</div>
+<body class="selection:bg-primary-container selection:text-white">
+
+<nav class="bg-[#fff9ef]/90 backdrop-blur-md sticky top-0 z-50 border-b border-black/5 w-full">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <span class="text-2xl font-black text-primary tracking-tighter">Oaty Date</span>
+        <div class="hidden md:flex items-center space-x-10 text-sm font-bold uppercase tracking-widest text-on-surface-variant">
+            <a href="#" class="hover:text-primary transition-colors">Story</a>
+            <a href="#" class="hover:text-primary transition-colors">Nutrition</a>
+            <a href="#" class="hover:text-primary transition-colors">Shop</a>
+        </div>
+        <button class="bg-primary text-white px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest">BUY NOW</button>
+    </div>
 </nav>
-<!-- Hero Section -->
-<header class="relative overflow-hidden min-h-[819px] flex items-center px-8">
-<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-<div class="z-10">
-<span class="text-tertiary font-bold tracking-widest uppercase text-sm mb-4 block">Editorial Nourishment</span>
-<h1 class="text-6xl md:text-8xl font-black text-on-background leading-[0.9] tracking-tighter mb-4">
-                OATY DATE <br/> <span class="text-primary">POWER BOWL</span>
-</h1>
-<p class="text-xl font-bold tracking-[0.2em] text-on-surface-variant mb-8 uppercase">
-                OATS • CHIA SEEDS • DATE SYRUP
-            </p>
-<p class="text-xl max-w-md mb-10 text-on-surface-variant leading-relaxed">
-                A premium apothecary-grade blend of ancient grains, organic dates, and power seeds designed for sustained vitality and delicious health.
-            </p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-10 py-4 rounded-full font-bold tracking-tight shadow-xl shadow-primary/10 active:scale-95 transition-all">
-                    SHOP STARTER KIT
-                </button>
-<button class="border border-outline-variant/20 text-primary px-10 py-4 rounded-full font-bold tracking-tight hover:bg-surface-container-low transition-colors">
-                    VIEW FLAVORS
-                </button>
-</div>
-</div>
-<div class="relative flex justify-center items-center">
-<div class="absolute inset-0 bg-primary-container/5 rounded-full blur-3xl transform -translate-y-12"></div>
-<img alt="Oaty Date Power Bowl" class="relative z-10 w-full max-w-lg aspect-square object-cover rounded-full shadow-2xl shadow-primary/20 border-[12px] border-surface-container-lowest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfigmTG-RlFPuAq-v3eXM3LYs8o6NAL7fbjJ4mkST0RRbo_3sMGIQkgOTnvPn6akjDf0KRRuWscoX0x3keetjxbFBo_6GbA7LLhZzK8a9lr_OacyXZYhkuwKdC23v9ZCNufH6SbO2D_JnxnMZPpN99KratQexosEDT1iFh6AobEOACz36LDev-cEXQWP0IzLT38E60BBmw1YdQIqpPGgZzXwdbCPcsnO1z3nA2uAmoZPWR2_iVTFmkusm24lqDoIep_XSei1qu6hg"/>
-<!-- Floating Badge -->
-<div class="absolute top-10 right-0 z-20 bg-tertiary text-on-tertiary p-6 rounded-full aspect-square flex flex-col items-center justify-center rotate-12 shadow-xl">
-<span class="text-xs uppercase tracking-tighter font-bold">100% Organic</span>
-<span class="text-2xl font-black">BIO</span>
-</div>
-</div>
-</div>
-</header>
-<!-- Highlighted Benefits (Information-Dense Label Style) -->
-<section class="py-24 px-8 bg-surface-container-low border-y border-outline-variant/20">
-<div class="max-w-7xl mx-auto">
-<div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
-<div class="p-8 bg-surface-container-lowest border border-outline-variant/30 rounded-lg shadow-sm">
-<h3 class="text-4xl font-black tracking-tighter text-on-background mb-2 uppercase">• HIGH FIBER •</h3>
-<p class="text-on-surface-variant font-medium">10g per serving to support digestive health and keep you full.</p>
-</div>
-<div class="p-8 bg-surface-container-lowest border border-outline-variant/30 rounded-lg shadow-sm">
-<h3 class="text-4xl font-black tracking-tighter text-on-background mb-2 uppercase">• OMEGA-3s •</h3>
-<p class="text-on-surface-variant font-medium">3.5g (ALA) essential fatty acids from chia seeds for brain health.</p>
-</div>
-<div class="p-8 bg-surface-container-lowest border border-outline-variant/30 rounded-lg shadow-sm">
-<h3 class="text-4xl font-black tracking-tighter text-on-background mb-2 uppercase">• NATURAL ENERGY •</h3>
-<p class="text-on-surface-variant font-medium">Sustained vitality without the crash, powered by organic dates.</p>
-</div>
-</div>
-</div>
-</section>
 
-<!-- Product  -->
-<section id="shop" class="py-32 px-8 bg-surface-container-low">
-    <div class="max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row gap-12 items-start">
-            
-            <div class="w-full md:w-3/5 grid grid-cols-2 gap-4">
-                <div class="row-span-2 overflow-hidden rounded-2xl shadow-xl border-4 border-white">
-                    <img src="https://the-perceptor-public-data.s3.us-east-1.amazonaws.com/Oaty_Date_Front.jpg" alt="Oaty Date Front" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="overflow-hidden rounded-2xl shadow-lg border-4 border-white aspect-square">
-                    <img src="https://the-perceptor-public-data.s3.us-east-1.amazonaws.com/Oaty_Date_Lifestyle.jpg" alt="Ingredients" class="w-full h-full object-cover">
-                </div>
-                <div class="overflow-hidden rounded-2xl shadow-lg border-4 border-white aspect-square">
-                    <img src="https://the-perceptor-public-data.s3.us-east-1.amazonaws.com/Oaty_Date_Back.jpg" alt="Nutrition Facts" class="w-full h-full object-cover">
+<section class="relative px-6 py-12 md:py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="text-center lg:text-left order-2 lg:order-1">
+            <span class="inline-block text-tertiary font-black tracking-[0.3em] uppercase text-[10px] md:text-xs mb-4">Editorial Nourishment</span>
+            <h1 class="text-5xl sm:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-6 uppercase">
+                Oaty Date <br/> <span class="text-primary">Power Bowl</span>
+            </h1>
+            <p class="text-base md:text-xl text-on-surface-variant max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed">
+                A premium apothecary-grade blend of ancient grains and organic dates designed for sustained vitality.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <button class="bg-primary text-white px-10 py-5 rounded-full font-black uppercase text-sm shadow-xl shadow-primary/20">Shop Starter Kit</button>
+                <button class="border border-primary/20 text-primary px-10 py-5 rounded-full font-black uppercase text-sm hover:bg-white transition-all">View Flavors</button>
+            </div>
+        </div>
+
+        <div class="relative order-1 lg:order-2 flex justify-center">
+            <div class="absolute inset-0 bg-primary-container/10 rounded-full blur-[100px] scale-90"></div>
+            <div class="relative w-full max-w-[300px] sm:max-w-[400px] lg:max-w-full aspect-square">
+                <img alt="Power Bowl" class="w-full h-full object-cover rounded-full shadow-2xl border-[10px] border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfigmTG-RlFPuAq-v3eXM3LYs8o6NAL7fbjJ4mkST0RRbo_3sMGIQkgOTnvPn6akjDf0KRRuWscoX0x3keetjxbFBo_6GbA7LLhZzK8a9lr_OacyXZYhkuwKdC23v9ZCNufH6SbO2D_JnxnMZPpN99KratQexosEDT1iFh6AobEOACz36LDev-cEXQWP0IzLT38E60BBmw1YdQIqpPGgZzXwdbCPcsnO1z3nA2uAmoZPWR2_iVTFmkusm24lqDoIep_XSei1qu6hg"/>
+                <div class="absolute top-4 right-4 bg-tertiary text-white h-20 w-20 md:h-28 md:w-28 rounded-full flex flex-col items-center justify-center rotate-12 shadow-2xl ring-4 ring-white/30">
+                    <span class="text-[8px] md:text-[10px] font-bold uppercase">100%</span>
+                    <span class="text-xl md:text-3xl font-black">BIO</span>
                 </div>
             </div>
-
-            <div class="w-full md:w-2/5 space-y-8 sticky top-32">
-                <div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <span class="bg-tertiary/10 text-tertiary px-3 py-1 rounded text-xs font-black uppercase tracking-widest">In Stock</span>
-                        <div class="flex text-primary">
-                            <span class="material-symbols-outlined text-sm">star</span>
-                            <span class="material-symbols-outlined text-sm">star</span>
-                            <span class="material-symbols-outlined text-sm">star</span>
-                            <span class="material-symbols-outlined text-sm">star</span>
-                            <span class="material-symbols-outlined text-sm">star</span>
-                        </div>
-                    </div>
-                    <h2 class="text-5xl font-black text-on-background leading-tight uppercase tracking-tighter">Oaty Date <br><span class="text-primary">Power Bowl</span></h2>
-                    <p class="text-2xl font-bold text-on-surface-variant mt-4">$24.90 <span class="text-sm font-medium opacity-60">/ 600g Bag</span></p>
-                </div>
-
-                <div class="space-y-4 border-y border-outline-variant/30 py-6">
-                    <p class="text-on-surface-variant leading-relaxed">
-                        Our signature blend of rolled oats, fiber-rich chia seeds, and natural date sweetness. No added sugars, just pure plant power.
-                    </p>
-                    <ul class="grid grid-cols-1 gap-2 text-sm font-bold text-primary">
-                        <li class="flex items-center gap-2"><span class="material-symbols-outlined">bolt</span> 100% NATURAL ENERGY</li>
-                        <li class="flex items-center gap-2"><span class="material-symbols-outlined">eco</span> ORGANIC INGREDIENTS</li>
-                        <li class="flex items-center gap-2"><span class="material-symbols-outlined">favorite</span> HEART HEALTHY</li>
-                    </ul>
-                </div>
-
-                <div class="pt-4">
-                    <a href="https://m.me/YOUR_PAGE_USERNAME" target="_blank" class="group flex items-center justify-center gap-4 bg-[#0084FF] text-white py-6 rounded-full font-black text-xl tracking-tighter hover:bg-[#0072db] transition-all shadow-xl shadow-blue-500/20 active:scale-95">
-                        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.91 1.455 5.502 3.734 7.213V22l3.383-1.857c.928.257 1.91.396 2.883.396 5.523 0 10-4.145 10-9.258C22 6.145 17.523 2 12 2zm1.06 12.336l-2.583-2.753-5.043 2.753 5.546-5.89 2.657 2.753 4.969-2.753-5.546 5.89z"/></svg>
-                        BUY ON MESSENGER
-                    </a>
-                    <p class="text-center mt-4 text-[10px] text-outline uppercase font-bold tracking-[0.2em]">Order via chat for instant support</p>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
 
-<!-- How to Enjoy (Updated Prep Steps) -->
-<section class="py-32 px-8 overflow-hidden">
-<div class="max-w-7xl mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-<div class="max-w-xl">
-<h2 class="text-5xl font-black tracking-tighter text-on-background mb-6">PREPARATION</h2>
-<p class="text-lg text-on-surface-variant">Enjoy both ways with hot or cold milk. A deliciously healthy breakfast ritual.</p>
-</div>
-<div class="hidden md:block h-px flex-grow bg-outline-variant/30 mx-12 mb-6"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-<!-- Step 1 -->
-<div class="group relative bg-surface-container-lowest border border-outline-variant/30 p-10 rounded-xl hover:shadow-md transition-all duration-300">
-<span class="text-5xl font-black text-outline-variant/30 absolute top-4 right-6 group-hover:text-primary/20">01</span>
-<div class="mb-8">
-<span class="material-symbols-outlined text-4xl text-primary">shopping_basket</span>
-</div>
-<h4 class="text-xl font-bold text-on-background mb-4 uppercase">EMPTY BLEND</h4>
-<p class="text-sm tracking-wide text-on-surface-variant font-medium">Empty blend into a bowl (approx. 60g serving).</p>
-</div>
-<!-- Step 2 -->
-<div class="group relative bg-surface-container-lowest border border-outline-variant/30 p-10 rounded-xl hover:shadow-md transition-all duration-300 md:mt-8">
-<span class="text-5xl font-black text-outline-variant/30 absolute top-4 right-6 group-hover:text-primary/20">02</span>
-<div class="mb-8">
-<span class="material-symbols-outlined text-4xl text-primary">water_drop</span>
-</div>
-<h4 class="text-xl font-bold text-on-background mb-4 uppercase">ADD MILK</h4>
-<p class="text-sm tracking-wide text-on-surface-variant font-medium">Add 100 to 150ml milk (hot or cold), as per your liking of thickness.</p>
-</div>
-<!-- Step 3 -->
-<div class="group relative bg-surface-container-lowest border border-outline-variant/30 p-10 rounded-xl hover:shadow-md transition-all duration-300">
-<span class="text-5xl font-black text-outline-variant/30 absolute top-4 right-6 group-hover:text-primary/20">03</span>
-<div class="mb-8">
-<span class="material-symbols-outlined text-4xl text-primary">lunch_dining</span>
-</div>
-<h4 class="text-xl font-bold text-on-background mb-4 uppercase">ADD TOPPING</h4>
-<p class="text-sm tracking-wide text-on-surface-variant font-medium">Add 1 ripe banana (as a topping) for the perfect finish.</p>
-</div>
-<!-- Step 4 -->
-<div class="group relative bg-surface-container-lowest border border-outline-variant/30 p-10 rounded-xl hover:shadow-md transition-all duration-300 md:mt-8">
-<span class="text-5xl font-black text-outline-variant/30 absolute top-4 right-6 group-hover:text-primary/20">04</span>
-<div class="mb-8">
-<span class="material-symbols-outlined text-4xl text-primary">restaurant</span>
-</div>
-<h4 class="text-xl font-bold text-on-background mb-4 uppercase">HEAT OR CHILL</h4>
-<p class="text-sm tracking-wide text-on-surface-variant font-medium">Microwave for 4 mins on high, or for a cold bowl, keep in fridge for 1 hour.</p>
-</div>
-</div>
-<div class="mt-12 text-center">
-<p class="text-xl font-bold text-primary tracking-widest uppercase">DELICIOUSLY HEALTHY BREAKFAST</p>
-</div>
-</div>
+<section class="bg-surface-container py-16 md:py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+            
+            <div class="lg:col-span-7 grid grid-cols-2 gap-4">
+                <div class="col-span-2 md:col-span-1 md:row-span-2">
+                    <img src="https://the-perceptor-public-data.s3.us-east-1.amazonaws.com/Oaty_Date_Front.jpg" class="w-full h-full object-cover rounded-2xl shadow-lg border-4 border-white" alt="Front">
+                </div>
+                <div class="aspect-square">
+                    <img src="https://the-perceptor-public-data.s3.us-east-1.amazonaws.com/Oaty_Date_Lifestyle.jpg" class="w-full h-full object-cover rounded-2xl shadow-md border-4 border-white" alt="Lifestyle">
+                </div>
+                <div class="aspect-square">
+                    <img src="https://the-perceptor-public-data.s3.us-east-1.amazonaws.com/Oaty_Date_Back.jpg" class="w-full h-full object-cover rounded-2xl shadow-md border-4 border-white" alt="Back">
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 flex flex-col justify-center">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="bg-tertiary text-white text-[9px] font-black px-2 py-1 rounded tracking-tighter uppercase">In Stock</span>
+                    <div class="flex text-primary"><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span><span class="material-symbols-outlined text-sm">star</span></div>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4 leading-none">Oaty Date <br><span class="text-primary">Power Bowl</span></h2>
+                <p class="text-2xl font-bold mb-8">$24.90 <span class="text-xs font-medium opacity-50">/ 600g Bag</span></p>
+                
+                <div class="space-y-6 border-t border-black/10 pt-8 mb-10">
+                    <p class="text-on-surface-variant leading-relaxed">No added sugars, high fiber, and organic seeds. The ultimate fuel for high performers.</p>
+                    <div class="grid grid-cols-2 gap-4 text-[10px] font-black tracking-widest text-primary uppercase">
+                        <div class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">bolt</span> High Energy</div>
+                        <div class="flex items-center gap-2"><span class="material-symbols-outlined text-lg">eco</span> Eco Friendly</div>
+                    </div>
+                </div>
+
+                <a href="#" class="block text-center bg-[#0084FF] text-white py-6 rounded-full font-black text-xl shadow-xl shadow-blue-500/20 active:scale-95 transition-all">
+                    BUY ON MESSENGER
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
-<!-- CTA Section -->
-<section class="py-24 px-8">
-<div class="max-w-5xl mx-auto bg-primary rounded-2xl p-16 relative overflow-hidden text-center">
-<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container rounded-full blur-[100px] opacity-50 -mr-20 -mt-20"></div>
-<div class="absolute bottom-0 left-0 w-64 h-64 bg-[#400101] rounded-full blur-[100px] opacity-30 -ml-20 -mb-20"></div>
-<div class="relative z-10">
-<h2 class="text-4xl md:text-6xl font-black text-on-primary tracking-tighter mb-8 uppercase">READY TO POWER YOUR DAY?</h2>
-<button class="bg-surface text-primary px-12 py-5 rounded-full font-black text-lg tracking-tight hover:scale-105 transition-transform shadow-2xl">
-                ORDER NOW &amp; SAVE 10%
-            </button>
-</div>
-</div>
+
+<section class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-black text-center mb-16 tracking-tighter">PREP IN 3 STEPS</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="bg-white p-10 rounded-3xl border border-black/5 shadow-sm text-center">
+                <div class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+                </div>
+                <h4 class="font-black uppercase mb-3">1. Scoop</h4>
+                <p class="text-sm text-on-surface-variant leading-relaxed">Add 60g of blend into your favorite bowl.</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl border border-black/5 shadow-sm text-center">
+                <div class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="material-symbols-outlined text-primary text-3xl">water_drop</span>
+                </div>
+                <h4 class="font-black uppercase mb-3">2. Hydrate</h4>
+                <p class="text-sm text-on-surface-variant leading-relaxed">Pour 150ml of milk or nut mylk over the mix.</p>
+            </div>
+            <div class="bg-white p-10 rounded-3xl border border-black/5 shadow-sm text-center">
+                <div class="w-16 h-16 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="material-symbols-outlined text-primary text-3xl">timer</span>
+                </div>
+                <h4 class="font-black uppercase mb-3">3. Wait</h4>
+                <p class="text-sm text-on-surface-variant leading-relaxed">Microwave for 4 mins or soak for 1 hour.</p>
+            </div>
+        </div>
+    </div>
 </section>
-<!-- Footer & Nutrition -->
-<footer class="bg-[#f9f3ea] dark:bg-[#1d1b16] mt-20">
-<div class="max-w-7xl mx-auto px-8 py-20">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-16">
-<!-- Branding -->
-<div class="md:col-span-4">
-<span class="text-2xl font-black text-[#7b2b23] tracking-tighter mb-6 block">Oaty Date</span>
-<p class="text-on-surface-variant mb-8 leading-relaxed">Pioneering clean, plant-based breakfast solutions for the modern achiever. Sourced from organic farms and crafted with intention.</p>
-<div class="flex space-x-4">
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-white transition-all">
-<span class="material-symbols-outlined text-lg">share</span>
-</div>
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-white transition-all">
-<span class="material-symbols-outlined text-lg">alternate_email</span>
-</div>
-</div>
-</div>
-<!-- Nav Links -->
-<div class="md:col-span-4 grid grid-cols-2 gap-8">
-<div>
-<h5 class="font-['Work_Sans'] text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6">Company</h5>
-<ul class="space-y-4">
-<li><a class="text-sm text-[#86736e] hover:text-[#7b2b23] transition-colors" href="#">About Us</a></li>
-<li><a class="text-sm text-[#86736e] hover:text-[#7b2b23] transition-colors" href="#">Sourcing</a></li>
-<li><a class="text-sm text-[#86736e] hover:text-[#7b2b23] transition-colors" href="#">Sustainability</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-['Work_Sans'] text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6">Help</h5>
-<ul class="space-y-4">
-<li><a class="text-sm text-[#86736e] hover:text-[#7b2b23] transition-colors" href="#">Shipping</a></li>
-<li><a class="text-sm text-[#86736e] hover:text-[#7b2b23] transition-colors" href="#">Returns</a></li>
-<li><a class="text-sm text-[#86736e] hover:text-[#7b2b23] transition-colors" href="#">Contact</a></li>
-</ul>
-</div>
-</div>
-<!-- Nutrition Facts (Updated Values from Label) -->
-<div class="md:col-span-4">
-<div class="bg-surface-container-lowest border-2 border-on-surface p-6 rounded-none shadow-[8px_8px_0px_0px_rgba(29,27,22,1)] font-body">
-<h4 class="text-3xl font-black border-b-8 border-on-surface pb-1 mb-1">Nutrition Facts</h4>
-<p class="text-sm font-bold border-b-2 border-on-surface pb-1 mb-2">1 serving per container <br/> Serving size: 1 Bowl (approx. 60g blend)</p>
-<div class="flex justify-between items-end border-b-4 border-on-surface mb-2">
-<span class="font-black text-lg">Amount per serving <br/> <span class="text-2xl">Calories</span></span>
-<span class="text-4xl font-black">240</span>
-</div>
-<div class="text-xs space-y-1">
-<div class="flex justify-between border-b border-on-surface/20 py-1">
-<span><span class="font-bold">Total Fat</span> 7g</span>
-<span class="font-bold">9%</span>
-</div>
-<div class="flex justify-between border-b border-on-surface/20 py-1">
-<span><span class="font-bold">Total Carbohydrate</span> 42g</span>
-<span class="font-bold">16%</span>
-</div>
-<div class="flex justify-between border-b border-on-surface/20 py-1 pl-4">
-<span>Dietary Fiber 10g</span>
-<span class="font-bold">36%</span>
-</div>
-<div class="flex justify-between border-b border-on-surface/20 py-1">
-<span><span class="font-bold">Protein</span> 7g</span>
-<span class="font-bold">14%</span>
-</div>
-</div>
-<div class="mt-4 pt-2 border-t border-on-surface">
-<p class="text-[10px] leading-tight italic">Ingredients: Rolled Oats, Dried Pitted Dates (naturally sweet), Chia Seeds.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Bottom Copyright -->
-<div class="mt-20 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="font-['Work_Sans'] text-xs uppercase tracking-widest text-[#86736e]">© 2024 Editorial Nourishment. All rights reserved.</p>
-<div class="flex space-x-6">
-<a class="font-['Work_Sans'] text-xs uppercase tracking-widest text-[#86736e] hover:text-primary" href="#">Privacy Policy</a>
-<a class="font-['Work_Sans'] text-xs uppercase tracking-widest text-[#86736e] hover:text-primary" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
+
+<footer class="bg-black text-white py-12 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <span class="text-2xl font-black tracking-tighter">Oaty Date</span>
+        <p class="text-[10px] uppercase tracking-[0.3em] opacity-40">© 2026 Editorial Nourishment</p>
+        <div class="flex space-x-6 text-[10px] font-bold uppercase tracking-widest">
+            <a href="#" class="hover:text-primary transition-colors">Privacy</a>
+            <a href="#" class="hover:text-primary transition-colors">Terms</a>
+        </div>
+    </div>
 </footer>
-</body></html>                        "tertiary-fixed-dim": "#4ae183",
-                        "error": "#ba1a1a",
-                        "on-primary": "#ffffff",
-                        "on-secondary-fixed-variant": "#524436",
-                        "outline": "#86736e",
-                        "surface-container-low": "#f9f3ea",
-                        "surface-container-lowest": "#ffffff",
-                        "on-secondary-container": "#716252",
-                        "on-secondary": "#ffffff",
-                        "error-container": "#ffdad6",
-                        "background": "#fff9ef",
-                        "on-tertiary-container": "#5ef292",
-                        "secondary-container": "#f4dfcb",
-                        "inverse-surface": "#32302a",
-                        "inverse-on-surface": "#f6f0e7",
-                        "surface": "#fff9ef",
-                        "surface-variant": "#e7e2d9",
-                        "tertiary": "#005127",
-                        "surface-container-high": "#ede7de",
-                        "inverse-primary": "#ffb4a9",
-                        "on-surface-variant": "#53433f",
-                        "primary": "#7b2b23",
-                        "surface-container": "#f3ede4",
-                        "on-error": "#ffffff",
-                        "on-error-container": "#93000a",
-                        "on-secondary-fixed": "#241a0e"
-                    },
-                    fontFamily: {
-                        "headline": ["Epilogue"],
-                        "body": ["Work Sans"],
-                        "label": ["Work Sans"]
-                    },
-                    borderRadius: {"DEFAULT": "0.5rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
-            },
-        }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        body { font-family: 'Work Sans', sans-serif; background-color: #fff9ef; color: #53433f; }
-        h1, h2, h3, h4 { font-family: 'Epilogue', sans-serif; }
-        .label-style { font-family: 'Epilogue', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; }
-    </style>
-</head>
-<body class="bg-surface text-on-surface-variant selection:bg-primary-container selection:text-on-primary-container">
-<!-- Top Navigation -->
-<nav class="bg-[#fff9ef]/80 dark:bg-[#1d1b16]/80 backdrop-blur-xl docked full-width top-0 sticky z-50">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
-<span class="text-2xl font-black text-[#7b2b23] dark:text-[#994237] tracking-tighter">Oaty Date</span>
-<div class="hidden md:flex items-center space-x-8">
-<a class="font-['Epilogue'] font-bold tracking-tight text-[#7b2b23] dark:text-[#994237] border-b-2 border-[#7b2b23] pb-1" href="#">Our Story</a>
-<a class="font-['Epilogue'] font-bold tracking-tight text-[#53433f] dark:text-[#d9c2bc] hover:text-[#7b2b23] transition-colors duration-300" href="#">Nutrition</a>
-<a class="font-['Epilogue'] font-bold tracking-tight text-[#53433f] dark:text-[#d9c2bc] hover:text-[#7b2b23] transition-colors duration-300" href="#">How to Enjoy</a>
-<a class="font-['Epilogue'] font-bold tracking-tight text-[#53433f] dark:text-[#d9c2bc] hover:text-[#7b2b23] transition-colors duration-300" href="#">Shop</a>
-</div>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold tracking-tight active:scale-95 duration-200 uppercase text-sm">
-            BUY NOW
-        </button>
-</div>
-</nav>
-<!-- Hero Section -->
-<header class="relative overflow-hidden min-h-[819px] flex items-center px-8">
-<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-<div class="z-10">
-<span class="text-tertiary font-bold tracking-widest uppercase text-sm mb-4 block">Editorial Nourishment</span>
-<h1 class="text-6xl md:text-8xl font-black text-on-background leading-[0.9] tracking-tighter mb-4">
-                OATY DATE <br/> <span class="text-primary">POWER BOWL</span>
-</h1>
-<p class="text-xl font-bold tracking-[0.2em] text-on-surface-variant mb-8 uppercase">
-                OATS • CHIA SEEDS • DATE SYRUP
-            </p>
-<p class="text-xl max-w-md mb-10 text-on-surface-variant leading-relaxed">
-                A premium apothecary-grade blend of ancient grains, organic dates, and power seeds designed for sustained vitality and delicious health.
-            </p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-10 py-4 rounded-full font-bold tracking-tight shadow-xl shadow-primary/10 active:scale-95 transition-all">
-                    SHOP STARTER KIT
-                </button>
-<button class="border border-outline-variant/20 text-primary px-10 py-4 rounded-full font-bold tracking-tight hover:bg-surface-container-low transition-colors">
-                    VIEW FLAVORS
-                </button>
-</div>
-</div>
-<div class="relative flex justify-center items-center">
-<div class="absolute inset-0 bg-primary-container/5 rounded-full blur-3xl transform -translate-y-12"></div>
-<img alt="Oaty Date Power Bowl" class="relative z-10 w-full max-w-lg aspect-square object-cover rounded-full shadow-2xl shadow-primary/20 border-[12px] border-surface-container-lowest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfigmTG-RlFPuAq-v3eXM3LYs8o6NAL7fbjJ4mkST0RRbo_3sMGIQkgOTnvPn6akjDf0KRRuWscoX0x3keetjxbFBo_6GbA7LLhZzK8a9lr_OacyXZYhkuwKdC23v9ZCNufH6SbO2D_JnxnMZPpN99KratQexosEDT1iFh6AobEOACz36LDev-cEXQWP0IzLT38E60BBmw1YdQIqpPGgZzXwdbCPcsnO1z3nA2uAmoZPWR2_iVTFmkusm24lqDoIep_XSei1qu6hg"/>
-<!-- Floating Badge -->
-<div class="absolute top-10 right-0 z-20 bg-tertiary text-on-tertiary p-6 rounded-full aspect-square flex flex-col items-center justify-center rotate-12 shadow-xl">
-<span class="text-xs uppercase tracking-tighter font-bold">100% Organic</span>
-<span class="text-2xl font-black">BIO</span>
-</div>
-</div>
-</div>
-</header>
-<!-- Highlighted Benefits (Information-Dense Label Style) -->
-<section class="py-24 px-8 bg-surface-container-low border-y border-outline-variant/20">
-<div class="max-w-7xl mx-auto">
-<div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
-<div class="p-8 bg-surface-container-lowest border border-outline-variant/30 rounded-lg shadow-sm">
-<h3 class="text-4xl font-black tracking-tighter text-on-background mb-2 uppercase">• HIGH FIBER •</h3>
-<p class="text-on-surface-variant font-medium">10g per serving to support digestive health and keep you full.</p>
-</div>
-<div class="p-8 bg-surface-container-lowest border border-outline-variant/30 rounded-lg shadow-sm">
-<h3 class="text-4xl font-black tracking-tighter text-on-background mb-2 uppercase">• OMEGA-3s •</h3>
-<p class="text-on-surface-variant font-medium">3.5g (ALA) essential fatty acids from chia seeds for brain health.</p>
-</div>
-<div class="p-8 bg-surface-container-lowest border border-outline-variant/30 rounded-lg shadow-sm">
-<h3 class="text-4xl font-black tracking-tighter text-on-background mb-2 uppercase">• NATURAL ENERGY •</h3>
-<p class="text-on-surface-variant font-medium">Sustained vitality without the crash, powered by organic dates.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- How to Enjoy (Updated Prep Steps) -->
-<section class="py-32 px-8 overflow-hidden">
-<div class="max-w-7xl mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-<div class="max-w-xl">
-<h2 class="text-5xl font-black tracking-tighter text-on-background mb-6">PREPARATION</h2>
-<p class="text-lg text-on-surface-variant">Enjoy both ways with hot or cold milk. A deliciously healthy breakfast ritual.</p>
-</div>
-<div class="hidden md:block h-px flex-grow bg-outline-variant/30 mx-12 mb-6"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-<!-- Step 1 -->
-<div class="group relative bg-surface-container-lowest border border-outline-variant/30 p-10 rounded-xl hover:shadow-md transition-all duration-300">
-<span class="text-5xl font-black text-outline-variant/30 absolute top-4 right-6 group-hover:text-primary/20">01</span>
-<div class="mb-8">
-<span class="material-symbols-outlined text-4xl text-primary">shopping_basket</span>
-</div>
-<h4 class="text-xl font-bold text-on-background mb-4 uppercase">EMPTY BLEND</h4>
-<p class="text-sm tracking-wide text-on-surface-variant font-medium">Empty blend into a bowl (approx. 60g serving).</p>
-</div>
-<!-- Step 2 -->
-<div class="group relative bg-surface-container-lowest border border-outline-variant/30 p-10 rounded-xl hover:shadow-md transition-all duration-300 md:mt-8">
-<span class="text-5xl font-black text-outline-variant/30 absolute top-4 right-6 group-hover:text-primary/20">02</span>
-<div class="mb-8">
-<span class="material-symbols-outlined text-4xl text-primary">water_drop</span>
-</div>
-<h4 class="text-xl font-bold text-on-background mb-4 uppercase">ADD MILK</h4>
-<p class="text-sm tracking-wide text-on-surface-variant font-medium">Add 100 to 150ml milk (hot or cold), as per your liking of thickness.</p>
-</div>
-<!-- Step 3 -->
-<div class="group relative bg-surface-container-lowest border border-outline-variant/30 p-10 rounded-xl hover:shadow-md transition-all duration-300">
-<span class="text-5xl font-black text-outline-variant/30 absolute top-4 right-6 group-hover:text-primary/20">03</span>
-<div class="mb-8">
-<span class="material-symbols-outlined text-4xl text-primary">lunch_dining</span>
-</div>
-<h4 class="text-xl font-bold text-on-background mb-4 uppercase">ADD TOPPING</h4>
-<p class="text-sm tracking-wide text-on-surface-variant font-medium">Add 1 ripe banana (as a topping) for the perfect finish.</p>
-</div>
-<!-- Step 4 -->
-<div class="group relative bg-surface-container-lowest border border-outline-variant/30 p-10 rounded-xl hover:shadow-md transition-all duration-300 md:mt-8">
-<span class="text-5xl font-black text-outline-variant/30 absolute top-4 right-6 group-hover:text-primary/20">04</span>
-<div class="mb-8">
-<span class="material-symbols-outlined text-4xl text-primary">restaurant</span>
-</div>
-<h4 class="text-xl font-bold text-on-background mb-4 uppercase">HEAT OR CHILL</h4>
-<p class="text-sm tracking-wide text-on-surface-variant font-medium">Microwave for 4 mins on high, or for a cold bowl, keep in fridge for 1 hour.</p>
-</div>
-</div>
-<div class="mt-12 text-center">
-<p class="text-xl font-bold text-primary tracking-widest uppercase">DELICIOUSLY HEALTHY BREAKFAST</p>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="py-24 px-8">
-<div class="max-w-5xl mx-auto bg-primary rounded-2xl p-16 relative overflow-hidden text-center">
-<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container rounded-full blur-[100px] opacity-50 -mr-20 -mt-20"></div>
-<div class="absolute bottom-0 left-0 w-64 h-64 bg-[#400101] rounded-full blur-[100px] opacity-30 -ml-20 -mb-20"></div>
-<div class="relative z-10">
-<h2 class="text-4xl md:text-6xl font-black text-on-primary tracking-tighter mb-8 uppercase">READY TO POWER YOUR DAY?</h2>
-<button class="bg-surface text-primary px-12 py-5 rounded-full font-black text-lg tracking-tight hover:scale-105 transition-transform shadow-2xl">
-                ORDER NOW &amp; SAVE 10%
-            </button>
-</div>
-</div>
-</section>
-<!-- Footer & Nutrition -->
-<footer class="bg-[#f9f3ea] dark:bg-[#1d1b16] mt-20">
-<div class="max-w-7xl mx-auto px-8 py-20">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-16">
-<!-- Branding -->
-<div class="md:col-span-4">
-<span class="text-2xl font-black text-[#7b2b23] tracking-tighter mb-6 block">Oaty Date</span>
-<p class="text-on-surface-variant mb-8 leading-relaxed">Pioneering clean, plant-based breakfast solutions for the modern achiever. Sourced from organic farms and crafted with intention.</p>
-<div class="flex space-x-4">
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-white transition-all">
-<span class="material-symbols-outlined text-lg">share</span>
-</div>
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-white transition-all">
-<span class="material-symbols-outlined text-lg">alternate_email</span>
-</div>
-</div>
-</div>
-<!-- Nav Links -->
-<div class="md:col-span-4 grid grid-cols-2 gap-8">
-<div>
-<h5 class="font-['Work_Sans'] text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6">Company</h5>
-<ul class="space-y-4">
-<li><a class="text-sm text-[#86736e] hover:text-[#7b2b23] transition-colors" href="#">About Us</a></li>
-<li><a class="text-sm text-[#86736e] hover:text-[#7b2b23] transition-colors" href="#">Sourcing</a></li>
-<li><a class="text-sm text-[#86736e] hover:text-[#7b2b23] transition-colors" href="#">Sustainability</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-['Work_Sans'] text-xs uppercase tracking-[0.2em] font-bold text-primary mb-6">Help</h5>
-<ul class="space-y-4">
-<li><a class="text-sm text-[#86736e] hover:text-[#7b2b23] transition-colors" href="#">Shipping</a></li>
-<li><a class="text-sm text-[#86736e] hover:text-[#7b2b23] transition-colors" href="#">Returns</a></li>
-<li><a class="text-sm text-[#86736e] hover:text-[#7b2b23] transition-colors" href="#">Contact</a></li>
-</ul>
-</div>
-</div>
-<!-- Nutrition Facts (Updated Values from Label) -->
-<div class="md:col-span-4">
-<div class="bg-surface-container-lowest border-2 border-on-surface p-6 rounded-none shadow-[8px_8px_0px_0px_rgba(29,27,22,1)] font-body">
-<h4 class="text-3xl font-black border-b-8 border-on-surface pb-1 mb-1">Nutrition Facts</h4>
-<p class="text-sm font-bold border-b-2 border-on-surface pb-1 mb-2">1 serving per container <br/> Serving size: 1 Bowl (approx. 60g blend)</p>
-<div class="flex justify-between items-end border-b-4 border-on-surface mb-2">
-<span class="font-black text-lg">Amount per serving <br/> <span class="text-2xl">Calories</span></span>
-<span class="text-4xl font-black">240</span>
-</div>
-<div class="text-xs space-y-1">
-<div class="flex justify-between border-b border-on-surface/20 py-1">
-<span><span class="font-bold">Total Fat</span> 7g</span>
-<span class="font-bold">9%</span>
-</div>
-<div class="flex justify-between border-b border-on-surface/20 py-1">
-<span><span class="font-bold">Total Carbohydrate</span> 42g</span>
-<span class="font-bold">16%</span>
-</div>
-<div class="flex justify-between border-b border-on-surface/20 py-1 pl-4">
-<span>Dietary Fiber 10g</span>
-<span class="font-bold">36%</span>
-</div>
-<div class="flex justify-between border-b border-on-surface/20 py-1">
-<span><span class="font-bold">Protein</span> 7g</span>
-<span class="font-bold">14%</span>
-</div>
-</div>
-<div class="mt-4 pt-2 border-t border-on-surface">
-<p class="text-[10px] leading-tight italic">Ingredients: Rolled Oats, Dried Pitted Dates (naturally sweet), Chia Seeds.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Bottom Copyright -->
-<div class="mt-20 pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="font-['Work_Sans'] text-xs uppercase tracking-widest text-[#86736e]">© 2024 Editorial Nourishment. All rights reserved.</p>
-<div class="flex space-x-6">
-<a class="font-['Work_Sans'] text-xs uppercase tracking-widest text-[#86736e] hover:text-primary" href="#">Privacy Policy</a>
-<a class="font-['Work_Sans'] text-xs uppercase tracking-widest text-[#86736e] hover:text-primary" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
-</body></html>
+
+</body>
+</html>
